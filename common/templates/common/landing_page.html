@@ -1,0 +1,19 @@
+{% extends 'common/base.html' %}
+{% block content %}
+    <div class="jumbotron parent">
+        <img style="width: 100%"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8oMJ7DiifzXmAsqU1LFt_12VU4mXDU09mg&usqp=CAU"
+             alt="">
+        <div style="text-align: center" class="absolute">
+            <h1 class="display-4">Welcome to</h1>
+            <h1>furniture-discount.com</h1><br>
+            <h3>On our website you can get a great discount on some brand furnitures. Make a bargain!</h3><br>
+            <h3>Just copy the discount code of the chosen furniture and give it at the brick-and-mortar store.</h3><br>
+            <h3>If you are a furniture seller and want to give discount on some of your brand furnitures - go and
+                publish them here!</h3><br>
+            <p class="lead">Have an account? <a href="{% url 'login' %}" class="btn btn-lg btn-secondary">sign
+                in</a> &emsp; &emsp; Do not have an account? <a href="{% url 'signup' %}"
+                                                                class="btn btn-lg btn-secondary">sign up</a></p>
+        </div>
+    </div>
+{% endblock %}

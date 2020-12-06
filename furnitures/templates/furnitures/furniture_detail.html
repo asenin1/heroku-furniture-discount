@@ -1,0 +1,26 @@
+{% extends 'common/base.html' %}
+{% block content %}
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="{{ furniture.image_url }}" style="width: 100%" alt="">
+        </div>
+        <div class="col-lg-6">
+            <div class="detail">
+                <h2 style="text-align: center">model:&nbsp&nbsp {{ furniture.model }}</h2><br>
+                <h4 style="text-align: center">description:&nbsp&nbsp {{ furniture.description }}</h4><br><br><br>
+                <h3 style="text-align: center">discounted price:&nbsp&nbsp&nbsp {{ furniture.discounted_price }} $</h3>
+                <h3 style="text-align: center">discount code:&nbsp&nbsp&nbsp {{ furniture.discount_code }}</h3>
+                <h2 style="text-align: center" class="card-title">company: {{ furniture.user.company }}</h2>
+                {% if  is_user_furniture %}
+                    <div style="text-align: center">
+                        <a href="{% url 'edit' furniture.id %}" class="btn btn-success">Edit</a>&nbsp&nbsp&nbsp&nbsp
+                        <a href="{% url 'delete' furniture.id %}" class="btn btn-danger">Delete</a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% if True %}
+        <div class="row"></div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'common/base.html' %}
+{% block content %}
+    <div class="row">
+        {% for f in furniture %}
+            <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ f.image_url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 style="text-align: center" class="card-title">{{ f.model }}</h5>
+                        <h6 style="text-align: center" class="card-title">discounted
+                            price:&nbsp&nbsp&nbsp {{ f.discounted_price }} $</h6>
+                        <h6 style="text-align: center" class="card-title">discounted
+                            code:&nbsp&nbsp&nbsp {{ f.discount_code }} $</h6>
+                        <h5 style="text-align: center" class="card-title">{{ f.user.company }}</h5><br>
+                        <p style="text-align: center"><a href="{% url 'furniture-detail' f.id %}"
+                                                         class="btn btn-primary">See details</a></p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
