@@ -785,12 +785,12 @@ false Z
 false Zulu
 false posixrules
 </TimeZones>
-      <StartupTime>1607142139</StartupTime>
+      <StartupTime>1607443065</StartupTime>
     </root>
     <database id="2" parent="1" name="furniture_discount">
       <ObjectId>17613</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1942</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2080</IntrospectionStateNumber>
       <Relations>sequence|table|17614|17616|1
 sequence|table|17625|17627|1
 sequence|table|17635|17637|1
@@ -894,7 +894,7 @@ UC/10
 </Acl>
       <StateNumber>276</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1943</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2081</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="22" parent="2" name="plpgsql">

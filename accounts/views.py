@@ -37,7 +37,7 @@ def register_user(request):
             profile.user = user
             profile.save()
             login(request, user)
-            return HttpResponse(f'index 123')
+            return redirect('login')
         context = {
             'user_form': RegisterForm(),
             'profile_form': ProfileForm()}
