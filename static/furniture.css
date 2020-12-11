@@ -1,11 +1,11 @@
 .card {
     background-color: linen;
-    color: coral;
+    color: brown;
     margin: 5% 0;
 }
 
 .detail {
-    color: coral;
+    color: brown;
 }
 
 .btn-primary:hover {
@@ -25,5 +25,5 @@
     padding: 5% 15%;
     margin: 5% 0;
     text-align: center;
-    color: chocolate;
+    color: brown;
 }
