@@ -1,0 +1,30 @@
+.card {
+    background-color: linen;
+    color: chocolate;
+    margin: 5% 0;
+}
+
+.detail {
+    color: coral;
+}
+
+.btn-primary:hover {
+    background-color: coral;
+    color: aliceblue;
+    border: 1px solid grey;
+}
+
+.btn-primary {
+    background-color: burlywood;
+    color: brown;
+    border: 1px solid grey;
+}
+
+.furniture-form {
+    border: 7px solid burlywood;
+    padding: 5% 15%;
+    margin: 5% 0;
+    text-align: center;
+    color: chocolate;
+}
+/**/
