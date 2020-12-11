@@ -24,7 +24,11 @@ SECRET_KEY = 'zb$pdrj!v5ehg(mjy*&jw=q#x&_sp$h06l+gl0ewvl)h$@#)4('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'furniture-discount.herokuapp.com',
+]
 
 # Application definition
 
